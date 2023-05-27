@@ -1,0 +1,1045 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+*,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.py-70 {
+  padding: 70px 0;
+}
+
+.py-60 {
+  padding: 60px 50px;
+}
+
+#headerSection .navbar {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2745098039);
+  left: 0;
+  padding: 22px 0 0;
+}
+#headerSection .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+#headerSection .navbar .navbar-toggler-icon .fa-bars {
+  color: #65B530;
+  font-size: 30px;
+}
+#headerSection .navbar .logo {
+  width: 194px;
+}
+#headerSection .fixed-top {
+  position: fixed;
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgb(0, 0, 0)) !important;
+  transition: 0.1s ease-in;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+#headerSection .connect-box .connect-number,
+#headerSection .connect-box .connect-mail {
+  color: #fff;
+}
+#headerSection .connect-box .connect-number:hover,
+#headerSection .connect-box .connect-mail:hover {
+  color: #65B530;
+}
+#headerSection .connect-box .connect-number {
+  font-weight: 800;
+  font-size: 21px;
+}
+#headerSection .connect-box .connect-number:hover {
+  color: #65B530;
+}
+#headerSection .connect-box .connect-mail {
+  font-weight: 400;
+  font-size: 16px;
+}
+#headerSection .mail-call-icon-box {
+  background-color: #65B530;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+#headerSection .nav-item {
+  padding: 16px 15px;
+  position: relative;
+}
+#headerSection .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+}
+#headerSection .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #eee8e8;
+  width: 70px;
+  display: block;
+  bottom: 0;
+  left: 22px;
+  width: 0;
+}
+#headerSection .nav-item .nav-link::after:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+#headerSection .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #fff;
+  width: 70px;
+  bottom: 0;
+  left: 22px;
+  opacity: 0.6;
+  width: 0;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+#headerSection .nav-item .nav-link:hover::after {
+  width: 70%;
+  opacity: 0.9;
+}
+#headerSection .nav-item .nav-link.active {
+  font-weight: 500;
+}
+#headerSection .nav-item .nav-link.active::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #fff;
+  width: 60px;
+  bottom: 0;
+  opacity: 1;
+  left: 22px;
+}
+#headerSection .nav-item:hover .nav-link {
+  font-weight: 500;
+}
+
+#bannerSection {
+  overflow-x: hidden;
+}
+#bannerSection .banner-overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 35.5%), linear-gradient(84.02deg, #22247C 6.99%, rgba(0, 0, 0, 0.33) 72.06%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#bannerSection .banner-container {
+  z-index: 2;
+}
+#bannerSection .banner-content-row {
+  height: 100vh;
+  padding: 10px;
+}
+#bannerSection .top-30 {
+  top: 30%;
+}
+#bannerSection .quality-box .quality-item .quality-card {
+  background: #FFFFFF;
+  border: 1px solid #ECEEF3;
+  border-radius: 8px;
+  min-height: 80px;
+}
+#bannerSection .quality-box .quality-item .quality-icons {
+  background-color: #0E63FF;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+#bannerSection .quality-box .quality-item .quality-card-text {
+  font-weight: 600;
+  font-size: 15px;
+  color: #141414;
+}
+#bannerSection .banner-description-box .banner-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  color: #fff;
+}
+#bannerSection .banner-description-box .banner-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  margin: 35px 0;
+}
+#bannerSection .brochure-box {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  right: 0;
+}
+#bannerSection .brochure-box .brochure-download-link {
+  background: #65B530;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 0;
+  padding: 17px 31px;
+  color: #FFFFFF;
+}
+#bannerSection .brochure-box .brochure-download-link:hover {
+  background-color: #0E63FF;
+  transition: 1s;
+}
+#bannerSection .brochure-box .brochure-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+#bannerSection .swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 2px;
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.36);
+}
+#bannerSection .swiper-pagination {
+  position: absolute;
+  text-align: start;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  padding-left: 40px;
+  bottom: 20px;
+  width: 62%;
+  left: 95px;
+}
+#bannerSection .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #65B530;
+}
+
+#aboutSection .section-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2E3192;
+}
+#aboutSection .section-title {
+  font-weight: 600;
+  font-size: 44px;
+  color: #000000;
+}
+#aboutSection .about-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+#aboutSection .vertical-divider {
+  display: inline-block;
+  height: 65%;
+  transform: rotate(180deg);
+  position: absolute;
+  width: 1px;
+  background-color: #D3D3D3;
+  left: 48%;
+}
+
+#serviceSection {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+#serviceSection .servicesec-container {
+  background: url(../images/bg/service-bg.webp) center/cover no-repeat;
+}
+#serviceSection .servicesec-container .section-titile-box {
+  padding: 0 23px;
+}
+#serviceSection .servicesec-container .service-section-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+}
+#serviceSection .servicesec-container .service-section-description {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #F9F9F9;
+}
+#serviceSection .service-items-box {
+  padding: 0 19px;
+}
+#serviceSection .service-items-box .service-item .service-card-img-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 70%;
+  border-radius: calc(0.25rem - 1px);
+  background: linear-gradient(180deg, rgba(14, 99, 255, 0) 57.33%, rgba(14, 99, 255, 0.74) 100%);
+}
+#serviceSection .service-items-box .service-item .service-card-img-overlay .content-box {
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+}
+#serviceSection .service-items-box .service-item .service-card-img-overlay .readmore-link {
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#serviceSection .service-items-box .service-item .service-card-img-overlay .readmore-link:hover {
+  background-color: #65B530;
+  color: #fff;
+  transition: 800ms;
+}
+#serviceSection .service-items-box .owl-dots {
+  position: absolute;
+  bottom: -114px;
+  left: 8px;
+}
+#serviceSection .service-items-box .owl-theme .owl-dots .owl-dot span {
+  width: 26px;
+  height: 3px;
+  margin: 5px 3px;
+  background: rgba(255, 255, 255, 0.36);
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+#serviceSection .service-items-box .owl-theme .owl-dots .owl-dot.active span,
+#serviceSection .service-items-box .owl-theme .owl-dots .owl-dot:hover span {
+  background: #65B530;
+}
+#serviceSection .service-brochure-box .service-brochure-card {
+  margin-top: 52px;
+  background-color: transparent;
+  color: #fff;
+}
+#serviceSection .service-brochure-box .service-brochure-card .brochure-card-body {
+  padding: 1rem 0;
+  text-align: end;
+}
+#serviceSection .service-brochure-box .service-brochure-card .brochure-card-body .brochure-text {
+  color: #9B9B9B;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+#serviceSection .service-brochure-box .service-brochure-card .brochure-card-body .brochure-text-second {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#serviceSection .service-brochure-box .service-brochure-download-btn {
+  width: 56px;
+  height: 56px;
+  background-color: #65B530;
+  border-radius: 100%;
+}
+#serviceSection .service-brochure-box .service-brochure-download-btn:hover {
+  background-color: #0E63FF;
+  transition: 500ms;
+}
+
+#productSection .section-subtitle {
+  color: #2E3192;
+  font-weight: 700;
+  font-size: 20px;
+}
+#productSection .section-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 58px;
+  color: #000000;
+}
+#productSection .nav-tabs .nav-item.show .nav-link,
+#productSection .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border: none;
+  border-bottom: 4px solid #0E63FF;
+}
+#productSection .nav-tabs .nav-item.show .nav-link,
+#productSection .nav-tabs .nav-link:hover {
+  border: none;
+  border-bottom: 4px solid #0E63FF;
+  transition: 300ms;
+}
+#productSection .nav-link,
+#productSection .nav-tabs {
+  border: none;
+}
+#productSection .nav-tabs {
+  border-bottom: none;
+}
+#productSection .product-category-item {
+  position: relative;
+  margin: 14px 17px;
+}
+#productSection .product-category-item::after {
+  position: absolute;
+  content: "";
+  height: 31px;
+  width: 2px;
+  background: rgba(217, 217, 217, 0.4);
+  top: 17px;
+  right: -25px;
+}
+#productSection .product-category-item .product-category-link {
+  font-weight: 446;
+  font-size: 16px;
+  text-align: left;
+  color: #2C2C2C;
+}
+#productSection .product-card .product-image-box {
+  background: rgba(244, 244, 244, 0.74);
+  min-height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#productSection .product-card .product-image-box .product-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  transition: transform 0.2s;
+  height: 216px;
+  transition: 1s;
+}
+#productSection .product-card .product-image-box .product-image:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+#productSection .product-card:hover .product-image {
+  transform: scale(1.1);
+  transition: 1s;
+}
+#productSection .product-card-body {
+  height: 100%;
+  position: relative;
+  min-height: 130px;
+}
+#productSection .product-card-body .product-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2C2C2C;
+}
+#productSection .product-card-body .requst-btn {
+  background: #0B0B0B;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0;
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+#productSection .product-card-body .requst-btn:hover {
+  background-color: #65B530;
+}
+#productSection .view-all-product-row {
+  background-color: #0E63FF;
+}
+#productSection .view-all-product-row .more-product-description {
+  color: #fff;
+}
+#productSection .view-all-product-row .more-product-link {
+  background: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #303030;
+  display: inline-block;
+  padding: 8px 30px;
+}
+#productSection .view-all-product-row .more-product-link:hover {
+  background-color: #65B530;
+  color: #fff;
+  transition: 400ms;
+}
+#productSection .horizontal-divider {
+  background: #D9D9D9;
+}
+
+#counterSection .review_description-box .subtitle {
+  color: #2E3192;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 58px;
+}
+#counterSection .review_description-box .review-title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 58px;
+  color: #000000;
+}
+#counterSection .review_description-box .review-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+#counterSection .earth-image {
+  display: block;
+  margin-right: auto;
+  position: relative;
+  right: 55px;
+}
+#counterSection .counter-box {
+  position: absolute;
+  bottom: 66px;
+  right: -8px;
+}
+#counterSection .counter-box .counter-number {
+  color: #3E41B5;
+  font-weight: 700;
+  font-size: 74px;
+  position: relative;
+}
+#counterSection .counter-box .counter-number::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 258px;
+  background-color: #65B530;
+  bottom: -13px;
+  left: 0;
+}
+#counterSection .counter-box .counter-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #4A4A4A;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1700px) {
+  #bannerSection .swiper-pagination {
+    position: absolute;
+    text-align: start;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    padding-left: 40px;
+    bottom: 20px;
+    width: 62%;
+    left: 15%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  #bannerSection .quality-box .quality-item .quality-card-text {
+    font-weight: 600;
+    font-size: 13px;
+    color: #141414;
+  }
+  #bannerSection .swiper-pagination {
+    position: absolute;
+    text-align: start;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    padding-left: 40px;
+    bottom: 50px;
+    width: 62%;
+    left: 0;
+  }
+  #headerSection .connect-box .connect-number {
+    font-weight: 800;
+    font-size: 15px;
+  }
+  #headerSection .connect-box .connect-mail {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #headerSection .nav-item {
+    padding: 16px 1px;
+    position: relative;
+  }
+  #headerSection .nav-item .nav-link {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+  }
+  #headerSection .nav-item .nav-link.active::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    width: 55px;
+    bottom: 0;
+    opacity: 1;
+    left: 3px;
+  }
+  #headerSection .navbar .logo {
+    width: 176px;
+  }
+  #aboutSection .vertical-divider {
+    display: inline-block;
+    height: 65%;
+    transform: rotate(180deg);
+    position: absolute;
+    width: 1px;
+    background-color: #D3D3D3;
+    left: 48%;
+    display: none !important;
+  }
+  #productSection .product-category-item {
+    position: relative;
+    margin: 14px 12px;
+  }
+  #productSection .product-category-item .product-category-link {
+    font-weight: 446;
+    font-size: 14px;
+    text-align: left;
+    color: #2C2C2C;
+  }
+  #productSection .product-card-body .product-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2C2C2C;
+  }
+  #counterSection .review_description-box .review-title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 48px;
+    color: #000000;
+  }
+  #counterSection .counter-box .counter-number {
+    color: #3E41B5;
+    font-weight: 700;
+    font-size: 43px;
+    position: relative;
+  }
+  #counterSection .counter-box {
+    position: absolute;
+    bottom: 66px;
+    right: 11px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #headerSection .navbar {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    background: black !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2745098039);
+    left: 0;
+    padding: 13px 0;
+  }
+  #headerSection .nav-item {
+    padding: 12px 11px;
+    position: relative;
+  }
+  #headerSection .nav-item .nav-link.active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: #fff;
+    width: 70px;
+    bottom: 0;
+    opacity: 1;
+    left: 7px;
+  }
+  #bannerSection .banner-content-row {
+    height: 100%;
+    padding: 88px 0;
+    margin-top: 5rem;
+  }
+  #bannerSection .swiper-pagination {
+    position: absolute;
+    text-align: start;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    padding-left: 40px;
+    bottom: 68px;
+    width: 62%;
+    left: 18px;
+  }
+  #aboutSection .vertical-divider {
+    display: inline-block;
+    height: 65%;
+    transform: rotate(180deg);
+    position: absolute;
+    width: 1px;
+    background-color: #D3D3D3;
+    left: 48%;
+    display: none;
+  }
+  #counterSection .earth-image {
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 0;
+  }
+  #counterSection .counter-box {
+    position: absolute;
+    bottom: 66px;
+    right: 27px;
+  }
+  #headerSection .fixed-top {
+    position: fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) !important;
+    transition: 1s ease-in;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  #bannerSection .quality-item {
+    width: 35%;
+  }
+  .quality-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  #serviceSection .servicesec-container .service-section-title {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+  }
+  #serviceSection .servicesec-container .service-section-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #F9F9F9;
+  }
+  #bannerSection .brochure-box {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    right: 0;
+    margin-top: 34px;
+  }
+  #bannerSection .swiper-pagination {
+    display: none;
+  }
+  .py-70 {
+    padding: 30px 0;
+  }
+  .py-60 {
+    padding: 60px 0px;
+  }
+  #bannerSection .banner-description-box .banner-title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 76px;
+    color: #fff;
+  }
+  #bannerSection .brochure-box .brochure-download-link {
+    background: #65B530;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 17px 13px;
+    color: #FFFFFF;
+  }
+  #aboutSection .section-title {
+    font-weight: 600;
+    font-size: 39px;
+    color: #000000;
+  }
+  #productSection .section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 50px;
+    color: #000000;
+  }
+  #productSection .product-category-item::after {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 2px;
+    background: rgba(217, 217, 217, 0.4);
+    top: 17px;
+    right: -3px;
+  }
+  #bannerSection .banner-description-box .banner-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+    margin: 18px 0;
+  }
+  #bannerSection .brochure-box .brochure-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  #bannerSection .top-30 {
+    top: 23%;
+  }
+  #productSection .view-all-product-row .more-product-link {
+    background: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #303030;
+    display: inline-block;
+    padding: 12px 30px;
+  }
+  #counterSection .review_description-box .review-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    color: #000000;
+  }
+  #bannerSection .quality-item {
+    width: 53%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #productSection .product-category-item {
+    position: relative;
+    margin: 14px 0px;
+  }
+  #bannerSection .quality-item {
+    width: 53%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .py-60 {
+    padding: 60px 0px;
+  }
+  #aboutSection .section-subtitle {
+    font-weight: 700;
+    font-size: 15px;
+    color: #2E3192;
+  }
+  #aboutSection .section-title {
+    font-weight: 600;
+    font-size: 27px;
+    color: #000000;
+  }
+  #aboutSection .about-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    line-height: 24px;
+    padding: 14px 0;
+    text-align: justify;
+  }
+  #bannerSection .brochure-box .brochure-download-link {
+    background: #65B530;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 8px 18px;
+    color: #FFFFFF;
+  }
+  #bannerSection .brochure-box .brochure-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 17px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  #bannerSection .quality-box .quality-item .quality-card {
+    background: #FFFFFF;
+    border: 1px solid #ECEEF3;
+    border-radius: 8px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  #bannerSection .banner-description-box .banner-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 63px;
+    color: #fff;
+  }
+  #bannerSection .top-30 {
+    top: 90px;
+  }
+  #bannerSection .banner-description-box .banner-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    margin: 17px 0;
+  }
+  #counterSection .counter-box {
+    position: absolute;
+    bottom: 0;
+    top: 39px;
+    right: 67px;
+  }
+  #counterSection .earth-image {
+    display: block;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+  }
+  #counterSection .counter-box .counter-number {
+    color: #3E41B5;
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+  }
+  #counterSection .counter-box .counter-title {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #4A4A4A;
+    padding: 7px 0;
+    margin-top: 15px;
+  }
+  #counterSection .review_description-box .subtitle {
+    color: #2E3192;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  #counterSection .review_description-box .review-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 41px;
+    color: #000000;
+  }
+  #productSection .product-card-body .requst-btn {
+    background: #0B0B0B;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 0;
+    padding: 8px 8px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+  }
+  #productSection .view-all-product-row .more-product-description {
+    color: #fff;
+    font-size: 15px;
+  }
+  #productSection .view-all-product-row .more-product-link {
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #303030;
+    display: inline-block;
+    padding: 11px 12px;
+    text-align: start;
+  }
+  #serviceSection .service-brochure-box .service-brochure-download-btn {
+    width: 56px;
+    height: 56px;
+    background-color: #65B530;
+    border-radius: 100%;
+  }
+  #productSection .section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #000000;
+  }
+  #productSection .section-subtitle {
+    color: #2E3192;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  #productSection .product-category-item::after {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 2px;
+    background: rgba(217, 217, 217, 0.4);
+    display: none;
+  }
+  #productSection .product-category-item .product-category-link {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    padding: 7px;
+    color: #2C2C2C;
+  }
+  #counterSection .counter-box .counter-number {
+    color: #3E41B5;
+    font-weight: 700;
+    font-size: 46px;
+    position: relative;
+  }
+  #productSection .product-category-item {
+    position: relative;
+    margin: 6px 3px;
+  }
+  #productSection .product-card-body .product-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C2C2C;
+  }
+  #productSection .product-card .product-image-box {
+    background: rgba(244, 244, 244, 0.74);
+    min-height: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #bannerSection .quality-item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 444px) {
+  #bannerSection .quality-item {
+    width: 83%;
+  }
+}/*# sourceMappingURL=style.css.map */
